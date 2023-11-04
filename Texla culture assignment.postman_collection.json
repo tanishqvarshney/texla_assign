@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "b7df1238-de6d-452e-a005-2f68656166e0",
+		"name": "Texla culture assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23160515"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Food\",\r\n    \"amount\": 100.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pdf",
+							"description": "Helloo",
+							"type": "file",
+							"src": "/C:/Users/tanis/OneDrive/Desktop/Resume_Tan.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/expense/upload/cd86d053-0193-4dfb-9c61-c949f5269bf3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"expense",
+						"upload",
+						"cd86d053-0193-4dfb-9c61-c949f5269bf3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/expense/claim/cd86d053-0193-4dfb-9c61-c949f5269bf3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"expense",
+						"claim",
+						"cd86d053-0193-4dfb-9c61-c949f5269bf3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
